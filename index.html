@@ -1,0 +1,2171 @@
+<!DOCTYPE html>
+<html lang="ru" data-theme="light">
+<head>
+    <!-- ============ Базовые мета-теги ============ -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <meta name="theme-color" content="#4F46E5" media="(prefers-color-scheme: light)">
+    <meta name="theme-color" content="#1E1B4B" media="(prefers-color-scheme: dark)">
+    <meta name="color-scheme" content="light dark">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="generator" content="Igor Krys - Hand-coded HTML/CSS/JS">
+
+    <!-- ============ SEO-мета ============ -->
+    <title>ЗнаниеПлюс — онлайн-решения задач и ГДЗ для школьников 1–11 классов</title>
+    <meta name="description" content="ЗнаниеПлюс — образовательная платформа с проверенными решениями задач, ГДЗ и пошаговыми объяснениями по всем предметам школьной программы. Бесплатный доступ 24/7.">
+    <meta name="keywords" content="ГДЗ, решебник, решения задач, онлайн-помощник, школьные предметы, математика, физика, химия, русский язык">
+    <meta name="robots" content="index, follow, max-image-preview:large">
+    <meta name="author" content="ЗнаниеПлюс">
+    <link rel="canonical" href="https://example.com/">
+
+    <!-- ============ Open Graph / Facebook ============ -->
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="ru_RU">
+    <meta property="og:url" content="https://example.com/">
+    <meta property="og:title" content="ЗнаниеПлюс — ГДЗ и решения задач онлайн">
+    <meta property="og:description" content="Проверенные решения задач и пошаговые объяснения для школьников 1–11 классов.">
+    <meta property="og:image" content="https://example.com/og-image.jpg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:site_name" content="ЗнаниеПлюс">
+
+    <!-- ============ Twitter Card ============ -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="ЗнаниеПлюс — ГДЗ и решения задач онлайн">
+    <meta name="twitter:description" content="Проверенные решения задач и пошаговые объяснения для школьников.">
+    <meta name="twitter:image" content="https://example.com/og-image.jpg">
+
+    <!-- ============ Favicon (SVG inline — 0 запросов) ============ -->
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%234F46E5'/%3E%3Cstop offset='1' stop-color='%23F59E0B'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='100' height='100' rx='20' fill='url(%23g)'/%3E%3Ctext x='50' y='70' font-size='60' text-anchor='middle' fill='white' font-family='Arial' font-weight='bold'%3EЗ%3C/text%3E%3C/svg%3E">
+
+    <!-- ============ Preconnect для производительности ============ -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
+    <link rel="dns-prefetch" href="https://fonts.googleapis.com">
+
+    <!-- ============ Schema.org — Organization ============ -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "EducationalOrganization",
+        "name": "ЗнаниеПлюс",
+        "url": "https://example.com/",
+        "logo": "https://example.com/logo.png",
+        "description": "Образовательная платформа с проверенными решениями задач и ГДЗ для школьников 1–11 классов.",
+        "foundingDate": "2020",
+        "sameAs": [
+            "https://t.me/znanieplus",
+            "https://vk.com/znanieplus"
+        ],
+        "contactPoint": {
+            "@type": "ContactPoint",
+            "telephone": "+7-993-734-69-80",
+            "contactType": "customer support",
+            "availableLanguage": ["Russian"]
+        }
+    }
+    </script>
+
+    <!-- ============ Schema.org — WebSite с поиском ============ -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "name": "ЗнаниеПлюс",
+        "url": "https://example.com/",
+        "potentialAction": {
+            "@type": "SearchAction",
+            "target": "https://example.com/search?q={search_term_string}",
+            "query-input": "required name=search_term_string"
+        }
+    }
+    </script>
+
+    <!-- ============ Schema.org — FAQ (для rich snippets в Google) ============ -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+            {
+                "@type": "Question",
+                "name": "ЗнаниеПлюс действительно бесплатный?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Да, базовый доступ ко всем решениям и объяснениям полностью бесплатный и не требует регистрации."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Для каких классов есть решения?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "На платформе представлены решения для школьников с 1 по 11 класс по 12 основным предметам."
+                }
+            }
+        ]
+    }
+    </script>
+
+    <style>
+        /* ============================================================
+           ДИЗАЙН-СИСТЕМА: CSS-переменные
+           Единый источник правды для цветов, отступов, типографики.
+           Переключение темы через data-theme на <html>
+           ============================================================ */
+        :root {
+            /* Цветовая палитра — светлая тема */
+            --color-primary: #4F46E5;
+            --color-primary-dark: #4338CA;
+            --color-primary-light: #EEF2FF;
+            --color-accent: #F59E0B;
+            --color-success: #10B981;
+
+            --color-bg: #FFFFFF;
+            --color-bg-alt: #F9FAFB;
+            --color-bg-elevated: #FFFFFF;
+            --color-text: #111827;
+            --color-text-muted: #6B7280;
+            --color-border: #E5E7EB;
+            --color-border-strong: #D1D5DB;
+
+            /* Тени */
+            --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.05);
+            --shadow-md: 0 4px 12px rgba(0, 0, 0, 0.08);
+            --shadow-lg: 0 10px 30px rgba(79, 70, 229, 0.15);
+            --shadow-xl: 0 20px 50px rgba(0, 0, 0, 0.15);
+
+            /* Типографика (системный стек — 0 запросов) */
+            --font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+                           "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji",
+                           "Segoe UI Emoji";
+            --font-mono: "SF Mono", Monaco, Consolas, "Liberation Mono", monospace;
+            --font-size-base: 16px;
+            --line-height: 1.6;
+
+            /* Отступы (8pt grid) */
+            --space-xs: 0.5rem;   /* 8px */
+            --space-sm: 1rem;     /* 16px */
+            --space-md: 1.5rem;   /* 24px */
+            --space-lg: 2.5rem;   /* 40px */
+            --space-xl: 4rem;     /* 64px */
+            --space-2xl: 6rem;    /* 96px */
+
+            /* Скругления */
+            --radius-sm: 8px;
+            --radius-md: 12px;
+            --radius-lg: 20px;
+            --radius-xl: 28px;
+            --radius-full: 999px;
+
+            /* Анимации */
+            --transition-fast: 0.15s ease;
+            --transition: 0.25s ease;
+            --transition-slow: 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+
+            /* Z-индексы (единая шкала) */
+            --z-header: 100;
+            --z-mobile-menu: 200;
+            --z-overlay: 150;
+            --z-back-to-top: 50;
+        }
+
+        /* ============================================================
+           ТЁМНАЯ ТЕМА
+           Переопределяем только цвета — всё остальное наследуется
+           ============================================================ */
+        [data-theme="dark"] {
+            --color-primary: #818CF8;
+            --color-primary-dark: #6366F1;
+            --color-primary-light: #312E81;
+            --color-accent: #FBBF24;
+
+            --color-bg: #0F172A;
+            --color-bg-alt: #1E293B;
+            --color-bg-elevated: #1E293B;
+            --color-text: #F1F5F9;
+            --color-text-muted: #94A3B8;
+            --color-border: #334155;
+            --color-border-strong: #475569;
+
+            --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.3);
+            --shadow-md: 0 4px 12px rgba(0, 0, 0, 0.4);
+            --shadow-lg: 0 10px 30px rgba(0, 0, 0, 0.5);
+            --shadow-xl: 0 20px 50px rgba(0, 0, 0, 0.6);
+        }
+
+        /* ============================================================
+           СБРОС И БАЗОВЫЕ СТИЛИ
+           ============================================================ */
+        *,
+        *::before,
+        *::after {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        html {
+            scroll-behavior: smooth;
+            -webkit-text-size-adjust: 100%;
+            scroll-padding-top: 80px; /* отступ для sticky-header */
+        }
+
+        body {
+            font-family: var(--font-family);
+            font-size: var(--font-size-base);
+            line-height: var(--line-height);
+            color: var(--color-text);
+            background-color: var(--color-bg);
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+            transition: background-color var(--transition-slow), color var(--transition-slow);
+            overflow-x: hidden;
+        }
+
+        /* Блокировка скролла при открытом меню */
+        body.menu-open {
+            overflow: hidden;
+        }
+
+        img, svg {
+            max-width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        a {
+            color: var(--color-primary);
+            text-decoration: none;
+            transition: color var(--transition);
+        }
+
+        a:hover { color: var(--color-primary-dark); }
+
+        button {
+            font-family: inherit;
+            cursor: pointer;
+            border: none;
+            background: none;
+            color: inherit;
+        }
+
+        /* ============================================================
+           ДОСТУПНОСТЬ (a11y)
+           ============================================================ */
+        /* Skip link для клавиатурной навигации */
+        .skip-link {
+            position: absolute;
+            top: -100px;
+            left: 0;
+            background: var(--color-primary);
+            color: #fff;
+            padding: 0.75rem 1.5rem;
+            z-index: 1000;
+            border-radius: 0 0 var(--radius-sm) 0;
+            font-weight: 600;
+            transition: top var(--transition);
+        }
+
+        .skip-link:focus {
+            top: 0;
+        }
+
+        /* Видимый фокус */
+        a:focus-visible,
+        button:focus-visible,
+        input:focus-visible {
+            outline: 3px solid var(--color-accent);
+            outline-offset: 2px;
+            border-radius: 4px;
+        }
+
+        /* Убираем outline для мыши, оставляем для клавиатуры */
+        :focus:not(:focus-visible) {
+            outline: none;
+        }
+
+        /* ============================================================
+           ПРОГРЕСС-БАР ЧТЕНИЯ СТРАНИЦЫ
+           ============================================================ */
+        .progress-bar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 0%;
+            height: 3px;
+            background: linear-gradient(90deg, var(--color-primary), var(--color-accent));
+            z-index: calc(var(--z-header) + 1);
+            transition: width 0.1s ease-out;
+            will-change: width;
+        }
+
+        /* ============================================================
+           УТИЛИТАРНЫЕ КЛАССЫ
+           ============================================================ */
+        .container {
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 var(--space-md);
+        }
+
+        .section {
+            padding: var(--space-xl) 0;
+        }
+
+        .section__title {
+            font-size: clamp(1.75rem, 4vw, 2.5rem);
+            font-weight: 700;
+            margin-bottom: var(--space-sm);
+            letter-spacing: -0.02em;
+        }
+
+        .section__subtitle {
+            color: var(--color-text-muted);
+            font-size: 1.125rem;
+            margin-bottom: var(--space-lg);
+            max-width: 640px;
+        }
+
+        /* ============================================================
+           АНИМАЦИИ ПОЯВЛЕНИЯ ПРИ СКРОЛЛЕ
+           ============================================================ */
+        .reveal {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: opacity 0.7s ease-out, transform 0.7s ease-out;
+            will-change: opacity, transform;
+        }
+
+        .reveal--left {
+            transform: translateX(-40px);
+        }
+
+        .reveal--right {
+            transform: translateX(40px);
+        }
+
+        .reveal--scale {
+            transform: scale(0.9);
+        }
+
+        .reveal.is-visible {
+            opacity: 1;
+            transform: translate(0, 0) scale(1);
+        }
+
+        /* Задержки для каскадного появления */
+        .reveal-delay-1 { transition-delay: 0.1s; }
+        .reveal-delay-2 { transition-delay: 0.2s; }
+        .reveal-delay-3 { transition-delay: 0.3s; }
+        .reveal-delay-4 { transition-delay: 0.4s; }
+
+        /* ============================================================
+           БЛОК: Кнопка
+           ============================================================ */
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.5rem;
+            padding: 0.875rem 1.75rem;
+            font-size: 1rem;
+            font-weight: 600;
+            border-radius: var(--radius-sm);
+            border: 2px solid transparent;
+            cursor: pointer;
+            transition: all var(--transition);
+            font-family: inherit;
+            white-space: nowrap;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .btn--primary {
+            background-color: var(--color-primary);
+            color: #fff;
+            box-shadow: var(--shadow-md);
+        }
+
+        .btn--primary::before {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 0;
+            height: 0;
+            background: rgba(255, 255, 255, 0.2);
+            border-radius: 50%;
+            transform: translate(-50%, -50%);
+            transition: width 0.5s, height 0.5s;
+        }
+
+        .btn--primary:hover::before {
+            width: 300px;
+            height: 300px;
+        }
+
+        .btn--primary:hover {
+            background-color: var(--color-primary-dark);
+            transform: translateY(-2px);
+            box-shadow: var(--shadow-lg);
+            color: #fff;
+        }
+
+        .btn--outline {
+            background-color: transparent;
+            color: var(--color-primary);
+            border-color: var(--color-primary);
+        }
+
+        .btn--outline:hover {
+            background-color: var(--color-primary);
+            color: #fff;
+        }
+
+        .btn--ghost {
+            background-color: transparent;
+            color: var(--color-text);
+            padding: 0.5rem;
+        }
+
+        .btn--ghost:hover {
+            background-color: var(--color-bg-alt);
+            color: var(--color-primary);
+        }
+
+        /* ============================================================
+           БЛОК: Header
+           ============================================================ */
+        .header {
+            position: sticky;
+            top: 0;
+            z-index: var(--z-header);
+            background-color: rgba(255, 255, 255, 0.85);
+            backdrop-filter: saturate(180%) blur(12px);
+            -webkit-backdrop-filter: saturate(180%) blur(12px);
+            border-bottom: 1px solid var(--color-border);
+            transition: background-color var(--transition-slow), border-color var(--transition-slow);
+        }
+
+        [data-theme="dark"] .header {
+            background-color: rgba(15, 23, 42, 0.85);
+        }
+
+        .header__container {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            height: 72px;
+            gap: var(--space-md);
+        }
+
+        .header__logo {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            font-size: 1.25rem;
+            font-weight: 700;
+            color: var(--color-text);
+            flex-shrink: 0;
+        }
+
+        .header__logo:hover {
+            color: var(--color-text);
+        }
+
+        .header__logo-icon {
+            width: 36px;
+            height: 36px;
+            background: linear-gradient(135deg, var(--color-primary), var(--color-accent));
+            border-radius: var(--radius-sm);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #fff;
+            font-weight: 700;
+            font-size: 1.1rem;
+            box-shadow: var(--shadow-sm);
+        }
+
+        /* Desktop-навигация */
+        .header__nav {
+            display: none;
+        }
+
+        .header__menu {
+            display: flex;
+            gap: var(--space-md);
+            list-style: none;
+        }
+
+        .header__menu-link {
+            color: var(--color-text);
+            font-weight: 500;
+            font-size: 0.95rem;
+            position: relative;
+            padding: 0.25rem 0;
+        }
+
+        .header__menu-link::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: var(--color-primary);
+            transition: width var(--transition);
+        }
+
+        .header__menu-link:hover::after {
+            width: 100%;
+        }
+
+        .header__menu-link:hover {
+            color: var(--color-primary);
+        }
+
+        .header__actions {
+            display: flex;
+            gap: var(--space-sm);
+            align-items: center;
+        }
+
+        .header__btn-login {
+            display: none;
+            color: var(--color-text);
+            font-weight: 500;
+        }
+
+        /* ============================================================
+           ПЕРЕКЛЮЧАТЕЛЬ ТЕМЫ
+           ============================================================ */
+        .theme-toggle {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--color-text);
+            transition: all var(--transition);
+            position: relative;
+        }
+
+        .theme-toggle:hover {
+            background-color: var(--color-bg-alt);
+            color: var(--color-primary);
+            transform: rotate(15deg);
+        }
+
+        .theme-toggle__icon {
+            position: absolute;
+            transition: opacity var(--transition), transform var(--transition);
+        }
+
+        .theme-toggle__icon--sun {
+            opacity: 0;
+            transform: rotate(-90deg) scale(0.5);
+        }
+
+        .theme-toggle__icon--moon {
+            opacity: 1;
+            transform: rotate(0) scale(1);
+        }
+
+        [data-theme="dark"] .theme-toggle__icon--sun {
+            opacity: 1;
+            transform: rotate(0) scale(1);
+        }
+
+        [data-theme="dark"] .theme-toggle__icon--moon {
+            opacity: 0;
+            transform: rotate(90deg) scale(0.5);
+        }
+
+        /* ============================================================
+           БУРГЕР-МЕНЮ (мобильное)
+           ============================================================ */
+        .burger {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            transition: background-color var(--transition);
+            position: relative;
+            z-index: calc(var(--z-mobile-menu) + 1);
+        }
+
+        .burger:hover {
+            background-color: var(--color-bg-alt);
+        }
+
+        .burger__line {
+            width: 20px;
+            height: 2px;
+            background-color: var(--color-text);
+            border-radius: 2px;
+            transition: all var(--transition);
+            position: absolute;
+        }
+
+        .burger__line:nth-child(1) { transform: translateY(-6px); }
+        .burger__line:nth-child(2) { transform: translateY(0); }
+        .burger__line:nth-child(3) { transform: translateY(6px); }
+
+        /* Анимация в крестик */
+        .burger.is-active .burger__line:nth-child(1) {
+            transform: rotate(45deg);
+        }
+
+        .burger.is-active .burger__line:nth-child(2) {
+            opacity: 0;
+        }
+
+        .burger.is-active .burger__line:nth-child(3) {
+            transform: rotate(-45deg);
+        }
+
+        /* Мобильное меню */
+        .mobile-menu {
+            position: fixed;
+            top: 0;
+            right: 0;
+            width: min(320px, 85vw);
+            height: 100vh;
+            height: 100dvh;
+            background-color: var(--color-bg);
+            box-shadow: var(--shadow-xl);
+            z-index: var(--z-mobile-menu);
+            padding: calc(72px + var(--space-md)) var(--space-md) var(--space-md);
+            transform: translateX(100%);
+            transition: transform var(--transition-slow);
+            overflow-y: auto;
+            border-left: 1px solid var(--color-border);
+        }
+
+        .mobile-menu.is-open {
+            transform: translateX(0);
+        }
+
+        .mobile-menu__list {
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+            gap: var(--space-xs);
+        }
+
+        .mobile-menu__link {
+            display: block;
+            padding: var(--space-sm);
+            color: var(--color-text);
+            font-weight: 500;
+            font-size: 1.1rem;
+            border-radius: var(--radius-sm);
+            transition: background-color var(--transition);
+        }
+
+        .mobile-menu__link:hover {
+            background-color: var(--color-bg-alt);
+            color: var(--color-primary);
+        }
+
+        .mobile-menu__actions {
+            margin-top: var(--space-md);
+            padding-top: var(--space-md);
+            border-top: 1px solid var(--color-border);
+            display: flex;
+            flex-direction: column;
+            gap: var(--space-xs);
+        }
+
+        /* Оверлей */
+        .overlay {
+            position: fixed;
+            inset: 0;
+            background-color: rgba(0, 0, 0, 0.5);
+            backdrop-filter: blur(4px);
+            -webkit-backdrop-filter: blur(4px);
+            z-index: var(--z-overlay);
+            opacity: 0;
+            visibility: hidden;
+            transition: opacity var(--transition-slow), visibility var(--transition-slow);
+        }
+
+        .overlay.is-visible {
+            opacity: 1;
+            visibility: visible;
+        }
+
+        @media (min-width: 768px) {
+            .header__nav { display: block; }
+            .header__btn-login { display: inline-block; }
+            .burger { display: none; }
+        }
+
+        /* ============================================================
+           БЛОК: Hero
+           ============================================================ */
+        .hero {
+            position: relative;
+            padding: var(--space-xl) 0 var(--space-2xl);
+            overflow: hidden;
+        }
+
+        /* Декоративные градиентные пятна */
+        .hero::before,
+        .hero::after {
+            content: '';
+            position: absolute;
+            border-radius: 50%;
+            filter: blur(80px);
+            opacity: 0.4;
+            z-index: -1;
+            pointer-events: none;
+            transition: opacity var(--transition-slow);
+        }
+
+        .hero::before {
+            top: -10%;
+            left: -10%;
+            width: 500px;
+            height: 500px;
+            background: radial-gradient(circle, var(--color-primary), transparent 70%);
+        }
+
+        .hero::after {
+            bottom: -10%;
+            right: -10%;
+            width: 400px;
+            height: 400px;
+            background: radial-gradient(circle, var(--color-accent), transparent 70%);
+        }
+
+        [data-theme="dark"] .hero::before,
+        [data-theme="dark"] .hero::after {
+            opacity: 0.2;
+        }
+
+        .hero__container {
+            display: grid;
+            gap: var(--space-lg);
+            align-items: center;
+        }
+
+        .hero__badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            padding: 0.375rem 0.875rem;
+            background-color: var(--color-primary-light);
+            color: var(--color-primary);
+            border-radius: var(--radius-full);
+            font-size: 0.875rem;
+            font-weight: 600;
+            margin-bottom: var(--space-md);
+            border: 1px solid var(--color-primary);
+            border-color: rgba(79, 70, 229, 0.2);
+        }
+
+        .hero__badge-dot {
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+            background-color: var(--color-success);
+            box-shadow: 0 0 0 0 rgba(16, 185, 129, 0.7);
+            animation: pulse 2s infinite;
+        }
+
+        @keyframes pulse {
+            0% { box-shadow: 0 0 0 0 rgba(16, 185, 129, 0.7); }
+            70% { box-shadow: 0 0 0 10px rgba(16, 185, 129, 0); }
+            100% { box-shadow: 0 0 0 0 rgba(16, 185, 129, 0); }
+        }
+
+        .hero__title {
+            font-size: clamp(2rem, 5vw, 3.5rem);
+            font-weight: 800;
+            line-height: 1.1;
+            letter-spacing: -0.03em;
+            margin-bottom: var(--space-md);
+        }
+
+        .hero__title-accent {
+            background: linear-gradient(135deg, var(--color-primary), var(--color-accent));
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+            display: inline-block;
+        }
+
+        .hero__subtitle {
+            font-size: clamp(1rem, 2vw, 1.25rem);
+            color: var(--color-text-muted);
+            margin-bottom: var(--space-lg);
+            max-width: 560px;
+        }
+
+        .hero__actions {
+            display: flex;
+            flex-wrap: wrap;
+            gap: var(--space-sm);
+            margin-bottom: var(--space-lg);
+        }
+
+        .hero__stats {
+            display: flex;
+            flex-wrap: wrap;
+            gap: var(--space-lg);
+        }
+
+        .hero__stat-value {
+            font-size: clamp(1.5rem, 3vw, 2rem);
+            font-weight: 700;
+            color: var(--color-primary);
+            font-variant-numeric: tabular-nums;
+        }
+
+        .hero__stat-label {
+            font-size: 0.875rem;
+            color: var(--color-text-muted);
+        }
+
+        /* Интерактивная карточка в hero */
+        .hero__visual {
+            position: relative;
+            display: flex;
+            justify-content: center;
+            perspective: 1000px;
+        }
+
+        .hero__card {
+            width: 100%;
+            max-width: 420px;
+            background: var(--color-bg-elevated);
+            border-radius: var(--radius-lg);
+            padding: var(--space-md);
+            box-shadow: var(--shadow-lg);
+            border: 1px solid var(--color-border);
+            transition: transform var(--transition-slow), box-shadow var(--transition-slow);
+            transform-style: preserve-3d;
+        }
+
+        .hero__card:hover {
+            transform: translateY(-8px) rotateX(2deg);
+            box-shadow: var(--shadow-xl);
+        }
+
+        .hero__card-header {
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+            padding-bottom: var(--space-sm);
+            border-bottom: 1px solid var(--color-border);
+            margin-bottom: var(--space-sm);
+        }
+
+        .hero__card-icon {
+            width: 44px;
+            height: 44px;
+            border-radius: var(--radius-sm);
+            background: linear-gradient(135deg, var(--color-primary), #8B5CF6);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #fff;
+            flex-shrink: 0;
+        }
+
+        .hero__card-title {
+            font-weight: 600;
+            font-size: 0.95rem;
+        }
+
+        .hero__card-subtitle {
+            font-size: 0.8rem;
+            color: var(--color-text-muted);
+        }
+
+        .hero__card-body {
+            font-family: var(--font-mono);
+            font-size: 0.85rem;
+            color: var(--color-text-muted);
+            line-height: 1.8;
+        }
+
+        .hero__card-body code {
+            color: var(--color-primary);
+            font-weight: 600;
+        }
+
+        @media (min-width: 992px) {
+            .hero__container {
+                grid-template-columns: 1.1fr 1fr;
+            }
+        }
+
+        /* ============================================================
+           БЛОК: Features (преимущества)
+           ============================================================ */
+        .features {
+            background-color: var(--color-bg-alt);
+            transition: background-color var(--transition-slow);
+        }
+
+        .features__grid {
+            display: grid;
+            gap: var(--space-md);
+            grid-template-columns: 1fr;
+        }
+
+        .features__item {
+            background-color: var(--color-bg-elevated);
+            padding: var(--space-md);
+            border-radius: var(--radius-md);
+            border: 1px solid var(--color-border);
+            transition: all var(--transition);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .features__item::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 3px;
+            background: linear-gradient(90deg, var(--color-primary), var(--color-accent));
+            transform: scaleX(0);
+            transform-origin: left;
+            transition: transform var(--transition);
+        }
+
+        .features__item:hover {
+            transform: translateY(-4px);
+            box-shadow: var(--shadow-md);
+            border-color: var(--color-primary);
+        }
+
+        .features__item:hover::before {
+            transform: scaleX(1);
+        }
+
+        .features__icon {
+            width: 52px;
+            height: 52px;
+            border-radius: var(--radius-sm);
+            background-color: var(--color-primary-light);
+            color: var(--color-primary);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: var(--space-sm);
+            transition: all var(--transition);
+        }
+
+        .features__item:hover .features__icon {
+            background-color: var(--color-primary);
+            color: #fff;
+            transform: scale(1.05);
+        }
+
+        .features__title {
+            font-size: 1.125rem;
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+        }
+
+        .features__text {
+            color: var(--color-text-muted);
+            font-size: 0.95rem;
+        }
+
+        @media (min-width: 768px) {
+            .features__grid { grid-template-columns: repeat(2, 1fr); }
+        }
+
+        @media (min-width: 1024px) {
+            .features__grid { grid-template-columns: repeat(4, 1fr); }
+        }
+
+        /* ============================================================
+           БЛОК: How it works
+           ============================================================ */
+        .how-it-works__steps {
+            display: grid;
+            gap: var(--space-lg);
+            counter-reset: step;
+        }
+
+        .how-it-works__step {
+            position: relative;
+            padding: var(--space-md);
+            background-color: var(--color-bg-elevated);
+            border: 1px solid var(--color-border);
+            border-radius: var(--radius-md);
+            counter-increment: step;
+            transition: all var(--transition);
+        }
+
+        .how-it-works__step:hover {
+            border-color: var(--color-primary);
+            transform: translateY(-4px);
+            box-shadow: var(--shadow-md);
+        }
+
+        .how-it-works__step-number {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 44px;
+            height: 44px;
+            background: linear-gradient(135deg, var(--color-primary), var(--color-primary-dark));
+            color: #fff;
+            border-radius: 50%;
+            font-weight: 700;
+            font-size: 1.125rem;
+            margin-bottom: var(--space-sm);
+            box-shadow: var(--shadow-md);
+        }
+
+        .how-it-works__step-title {
+            font-size: 1.125rem;
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+        }
+
+        .how-it-works__step-text {
+            color: var(--color-text-muted);
+            font-size: 0.95rem;
+        }
+
+        @media (min-width: 768px) {
+            .how-it-works__steps { grid-template-columns: repeat(3, 1fr); }
+        }
+
+        /* ============================================================
+           БЛОК: Subjects (предметы)
+           ============================================================ */
+        .subjects {
+            background-color: var(--color-bg-alt);
+            transition: background-color var(--transition-slow);
+        }
+
+        .subjects__grid {
+            display: grid;
+            gap: var(--space-sm);
+            grid-template-columns: repeat(2, 1fr);
+        }
+
+        .subjects__card {
+            display: flex;
+            align-items: center;
+            gap: var(--space-sm);
+            padding: var(--space-sm);
+            background-color: var(--color-bg-elevated);
+            border: 1px solid var(--color-border);
+            border-radius: var(--radius-sm);
+            transition: all var(--transition);
+            color: var(--color-text);
+            text-decoration: none;
+        }
+
+        .subjects__card:hover {
+            border-color: var(--color-primary);
+            transform: translateX(4px);
+            color: var(--color-text);
+            box-shadow: var(--shadow-sm);
+        }
+
+        .subjects__card-icon {
+            width: 44px;
+            height: 44px;
+            border-radius: var(--radius-sm);
+            background: linear-gradient(135deg, var(--color-primary-light), var(--color-bg-elevated));
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+            color: var(--color-primary);
+            transition: all var(--transition);
+        }
+
+        .subjects__card:hover .subjects__card-icon {
+            background: linear-gradient(135deg, var(--color-primary), var(--color-primary-dark));
+            color: #fff;
+            transform: rotate(-5deg) scale(1.05);
+        }
+
+        .subjects__card-title {
+            font-weight: 600;
+            font-size: 0.95rem;
+        }
+
+        @media (min-width: 768px) {
+            .subjects__grid { grid-template-columns: repeat(3, 1fr); }
+        }
+
+        @media (min-width: 1024px) {
+            .subjects__grid { grid-template-columns: repeat(4, 1fr); }
+        }
+
+        /* ============================================================
+           БЛОК: FAQ (аккордеон)
+           ============================================================ */
+        .faq__list {
+            display: flex;
+            flex-direction: column;
+            gap: var(--space-sm);
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .faq__item {
+            background-color: var(--color-bg-elevated);
+            border: 1px solid var(--color-border);
+            border-radius: var(--radius-md);
+            overflow: hidden;
+            transition: border-color var(--transition);
+        }
+
+        .faq__item[open] {
+            border-color: var(--color-primary);
+        }
+
+        .faq__question {
+            padding: var(--space-md);
+            font-weight: 600;
+            font-size: 1rem;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: var(--space-sm);
+            list-style: none;
+            transition: color var(--transition);
+        }
+
+        .faq__question::-webkit-details-marker {
+            display: none;
+        }
+
+        .faq__question:hover {
+            color: var(--color-primary);
+        }
+
+        .faq__icon {
+            width: 24px;
+            height: 24px;
+            flex-shrink: 0;
+            transition: transform var(--transition);
+            color: var(--color-primary);
+        }
+
+        .faq__item[open] .faq__icon {
+            transform: rotate(45deg);
+        }
+
+        .faq__answer {
+            padding: 0 var(--space-md) var(--space-md);
+            color: var(--color-text-muted);
+            line-height: 1.7;
+            animation: slideDown 0.3s ease-out;
+        }
+
+        @keyframes slideDown {
+            from { opacity: 0; transform: translateY(-10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        /* ============================================================
+           БЛОК: CTA
+           ============================================================ */
+        .cta {
+            background: linear-gradient(135deg, var(--color-primary), var(--color-primary-dark));
+            color: #fff;
+            text-align: center;
+            border-radius: var(--radius-lg);
+            padding: var(--space-xl) var(--space-md);
+            margin: var(--space-xl) var(--space-md);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .cta::before,
+        .cta::after {
+            content: '';
+            position: absolute;
+            border-radius: 50%;
+            background: radial-gradient(circle, rgba(255, 255, 255, 0.15), transparent 70%);
+        }
+
+        .cta::before {
+            top: -50%;
+            right: -20%;
+            width: 400px;
+            height: 400px;
+        }
+
+        .cta::after {
+            bottom: -30%;
+            left: -10%;
+            width: 300px;
+            height: 300px;
+        }
+
+        .cta__container {
+            position: relative;
+            max-width: 640px;
+            margin: 0 auto;
+        }
+
+        .cta__title {
+            font-size: clamp(1.75rem, 4vw, 2.5rem);
+            font-weight: 700;
+            margin-bottom: var(--space-sm);
+            letter-spacing: -0.02em;
+        }
+
+        .cta__subtitle {
+            font-size: 1.125rem;
+            opacity: 0.9;
+            margin-bottom: var(--space-md);
+        }
+
+        .cta__btn {
+            background-color: #fff;
+            color: var(--color-primary);
+        }
+
+        .cta__btn:hover {
+            background-color: var(--color-primary-light);
+            color: var(--color-primary-dark);
+        }
+
+        /* ============================================================
+           БЛОК: Footer
+           ============================================================ */
+        .footer {
+            background-color: var(--color-text);
+            color: #D1D5DB;
+            padding: var(--space-xl) 0 var(--space-md);
+        }
+
+        [data-theme="dark"] .footer {
+            background-color: #020617;
+        }
+
+        .footer__grid {
+            display: grid;
+            gap: var(--space-lg);
+            grid-template-columns: 1fr;
+            margin-bottom: var(--space-lg);
+        }
+
+        .footer__brand {
+            max-width: 320px;
+        }
+
+        .footer__logo {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            font-size: 1.25rem;
+            font-weight: 700;
+            color: #fff;
+            margin-bottom: var(--space-sm);
+        }
+
+        .footer__description {
+            font-size: 0.95rem;
+            line-height: 1.6;
+        }
+
+        .footer__column-title {
+            color: #fff;
+            font-size: 1rem;
+            font-weight: 600;
+            margin-bottom: var(--space-sm);
+        }
+
+        .footer__menu {
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+            gap: 0.5rem;
+        }
+
+        .footer__menu-link {
+            color: #D1D5DB;
+            font-size: 0.95rem;
+            transition: color var(--transition);
+        }
+
+        .footer__menu-link:hover { color: #fff; }
+
+        .footer__bottom {
+            padding-top: var(--space-md);
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            text-align: center;
+            font-size: 0.875rem;
+            color: #9CA3AF;
+        }
+
+        @media (min-width: 768px) {
+            .footer__grid { grid-template-columns: 2fr 1fr 1fr 1fr; }
+        }
+
+        /* ============================================================
+           КНОПКА "НАВЕРХ"
+           ============================================================ */
+        .back-to-top {
+            position: fixed;
+            bottom: 24px;
+            right: 24px;
+            width: 48px;
+            height: 48px;
+            border-radius: 50%;
+            background-color: var(--color-primary);
+            color: #fff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: var(--shadow-lg);
+            z-index: var(--z-back-to-top);
+            opacity: 0;
+            visibility: hidden;
+            transform: translateY(20px);
+            transition: all var(--transition);
+        }
+
+        .back-to-top.is-visible {
+            opacity: 1;
+            visibility: visible;
+            transform: translateY(0);
+        }
+
+        .back-to-top:hover {
+            background-color: var(--color-primary-dark);
+            transform: translateY(-4px);
+            color: #fff;
+        }
+
+        /* ============================================================
+           УВАЖЕНИЕ К ПОЛЬЗОВАТЕЛЮ: prefers-reduced-motion
+           ============================================================ */
+        @media (prefers-reduced-motion: reduce) {
+            *,
+            *::before,
+            *::after {
+                animation-duration: 0.01ms !important;
+                animation-iteration-count: 1 !important;
+                transition-duration: 0.01ms !important;
+                scroll-behavior: auto !important;
+            }
+
+            .reveal {
+                opacity: 1;
+                transform: none;
+            }
+        }
+
+        /* ============================================================
+           СТИЛИ ДЛЯ ПЕЧАТИ
+           ============================================================ */
+        @media print {
+            .header,
+            .burger,
+            .mobile-menu,
+            .overlay,
+            .back-to-top,
+            .progress-bar,
+            .theme-toggle,
+            .cta {
+                display: none !important;
+            }
+
+            body {
+                color: #000;
+                background: #fff;
+            }
+
+            .hero {
+                padding: 0;
+            }
+
+            a {
+                color: #000;
+                text-decoration: underline;
+            }
+
+            a[href^="http"]::after {
+                content: " (" attr(href) ")";
+                font-size: 0.8em;
+                color: #666;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Skip-link для клавиатурной навигации -->
+    <a href="#main" class="skip-link">Перейти к содержимому</a>
+
+    <!-- Прогресс-бар чтения страницы -->
+    <div class="progress-bar" id="progressBar" aria-hidden="true"></div>
+
+    <!-- ============================================================
+         HEADER
+         ============================================================ -->
+    <header class="header" role="banner">
+        <div class="container header__container">
+            <a href="/" class="header__logo" aria-label="ЗнаниеПлюс — на главную">
+                <span class="header__logo-icon" aria-hidden="true">З</span>
+                <span>ЗнаниеПлюс</span>
+            </a>
+
+            <nav class="header__nav" aria-label="Основная навигация">
+                <ul class="header__menu">
+                    <li class="header__menu-item"><a href="#features" class="header__menu-link">Возможности</a></li>
+                    <li class="header__menu-item"><a href="#how-it-works" class="header__menu-link">Как это работает</a></li>
+                    <li class="header__menu-item"><a href="#subjects" class="header__menu-link">Предметы</a></li>
+                    <li class="header__menu-item"><a href="#faq" class="header__menu-link">Вопросы</a></li>
+                </ul>
+            </nav>
+
+            <div class="header__actions">
+                <!-- Переключатель темы -->
+                <button class="theme-toggle" id="themeToggle" type="button" aria-label="Переключить тему">
+                    <!-- Солнце (для тёмной темы) -->
+                    <svg class="theme-toggle__icon theme-toggle__icon--sun" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                        <circle cx="12" cy="12" r="4"/>
+                        <path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"/>
+                    </svg>
+                    <!-- Луна (для светлой темы) -->
+                    <svg class="theme-toggle__icon theme-toggle__icon--moon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
+                    </svg>
+                </button>
+
+                <a href="/login" class="header__btn-login">Войти</a>
+                <a href="#cta" class="btn btn--primary" style="padding: 0.625rem 1.25rem; font-size: 0.9rem;">Начать</a>
+
+                <!-- Бургер -->
+                <button class="burger" id="burger" type="button" aria-label="Открыть меню" aria-expanded="false" aria-controls="mobileMenu">
+                    <span class="burger__line"></span>
+                    <span class="burger__line"></span>
+                    <span class="burger__line"></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Мобильное меню -->
+    <div class="mobile-menu" id="mobileMenu" aria-hidden="true">
+        <ul class="mobile-menu__list">
+            <li><a href="#features" class="mobile-menu__link">Возможности</a></li>
+            <li><a href="#how-it-works" class="mobile-menu__link">Как это работает</a></li>
+            <li><a href="#subjects" class="mobile-menu__link">Предметы</a></li>
+            <li><a href="#faq" class="mobile-menu__link">Вопросы и ответы</a></li>
+            <li><a href="#contact" class="mobile-menu__link">Контакты</a></li>
+        </ul>
+        <div class="mobile-menu__actions">
+            <a href="/login" class="btn btn--outline" style="width: 100%;">Войти</a>
+            <a href="#cta" class="btn btn--primary" style="width: 100%;">Начать бесплатно</a>
+        </div>
+    </div>
+
+    <!-- Оверлей для мобильного меню -->
+    <div class="overlay" id="overlay" aria-hidden="true"></div>
+
+    <main id="main" role="main">
+        <!-- ============================================================
+             HERO
+             ============================================================ -->
+        <section class="hero" aria-labelledby="hero-title">
+            <div class="container hero__container">
+                <div class="hero__content">
+                    <span class="hero__badge reveal">
+                        <span class="hero__badge-dot" aria-hidden="true"></span>
+                        Более 50 000 проверенных решений
+                    </span>
+
+                    <h1 class="hero__title reveal reveal-delay-1" id="hero-title">
+                        Учись умнее с <span class="hero__title-accent">ЗнаниеПлюс</span>
+                    </h1>
+
+                    <p class="hero__subtitle reveal reveal-delay-2">
+                        Пошаговые решения задач и подробные объяснения по всем предметам школьной программы с 1 по 11 класс. Понимай, а не просто списывай.
+                    </p>
+
+                    <div class="hero__actions reveal reveal-delay-3">
+                        <a href="#cta" class="btn btn--primary">
+                            Начать бесплатно
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                <path d="M5 12h14M13 5l7 7-7 7"/>
+                            </svg>
+                        </a>
+                        <a href="#how-it-works" class="btn btn--outline">Как это работает</a>
+                    </div>
+
+                    <div class="hero__stats reveal reveal-delay-4" aria-label="Статистика платформы">
+                        <div class="hero__stat">
+                            <div class="hero__stat-value" data-count="50000">0</div>
+                            <div class="hero__stat-label">решений задач</div>
+                        </div>
+                        <div class="hero__stat">
+                            <div class="hero__stat-value" data-count="12">0</div>
+                            <div class="hero__stat-label">школьных предметов</div>
+                        </div>
+                        <div class="hero__stat">
+                            <div class="hero__stat-value">24/7</div>
+                            <div class="hero__stat-label">бесплатный доступ</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="hero__visual reveal reveal--right" aria-hidden="true">
+                    <div class="hero__card">
+                        <div class="hero__card-header">
+                            <div class="hero__card-icon">
+                                <!-- SVG: интеграл -->
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M9 17c-2 0-3-1-3-3V7c0-2 1-3 3-3"/>
+                                    <path d="M15 7c2 0 3 1 3 3v7c0 2-1 3-3 3"/>
+                                    <line x1="9" y1="12" x2="15" y2="12"/>
+                                </svg>
+                            </div>
+                            <div>
+                                <div class="hero__card-title">Алгебра, 10 класс</div>
+                                <div class="hero__card-subtitle">Производные · Задача №142</div>
+                            </div>
+                        </div>
+                        <div class="hero__card-body">
+                            <div><code>Найти:</code> f'(x) для f(x) = 3x² + 2x</div>
+                            <div style="margin-top:0.5rem"><code>Решение:</code></div>
+                            <div>• (3x²)' = 6x</div>
+                            <div>• (2x)' = 2</div>
+                            <div style="margin-top:0.5rem"><code>Ответ:</code> f'(x) = 6x + 2</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============================================================
+             FEATURES
+             ============================================================ -->
+        <section class="section features" id="features" aria-labelledby="features-title">
+            <div class="container">
+                <h2 class="section__title reveal" id="features-title">Почему выбирают нас</h2>
+                <p class="section__subtitle reveal reveal-delay-1">
+                    Мы создали платформу, которая помогает действительно понимать предмет, а не просто получать готовый ответ.
+                </p>
+
+                <div class="features__grid">
+                    <article class="features__item reveal">
+                        <div class="features__icon" aria-hidden="true">
+                            <!-- SVG: галочка в круге -->
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                            </svg>
+                        </div>
+                        <h3 class="features__title">Проверенные решения</h3>
+                        <p class="features__text">Каждое решение проходит проверку методистами. Никаких ошибок в формулах и вычислениях.</p>
+                    </article>
+
+                    <article class="features__item reveal reveal-delay-1">
+                        <div class="features__icon" aria-hidden="true">
+                            <!-- SVG: молния -->
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M13 10V3L4 14h7v7l9-11h-7z"/>
+                            </svg>
+                        </div>
+                        <h3 class="features__title">Мгновенный поиск</h3>
+                        <p class="features__text">Находите нужное решение за пару секунд по номеру учебника, теме или условию задачи.</p>
+                    </article>
+
+                    <article class="features__item reveal reveal-delay-2">
+                        <div class="features__icon" aria-hidden="true">
+                            <!-- SVG: книга -->
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"/>
+                            </svg>
+                        </div>
+                        <h3 class="features__title">Подробные объяснения</h3>
+                        <p class="features__text">К каждому решению прилагается теория и пошаговый разбор — идеально для подготовки к экзаменам.</p>
+                    </article>
+
+                    <article class="features__item reveal reveal-delay-3">
+                        <div class="features__icon" aria-hidden="true">
+                            <!-- SVG: замок -->
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <rect x="3" y="11" width="18" height="11" rx="2" ry="2"/>
+                                <path d="M7 11V7a5 5 0 0110 0v4"/>
+                            </svg>
+                        </div>
+                        <h3 class="features__title">Безопасно и бесплатно</h3>
+                        <p class="features__text">Никакой регистрации для базового доступа. Работает на любом устройстве — телефон, планшет, компьютер.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============================================================
+             HOW IT WORKS
+             ============================================================ -->
+        <section class="section" id="how-it-works" aria-labelledby="how-title">
+            <div class="container">
+                <h2 class="section__title reveal" id="how-title">Как это работает</h2>
+                <p class="section__subtitle reveal reveal-delay-1">Три простых шага до понимания любой задачи.</p>
+
+                <div class="how-it-works__steps">
+                    <article class="how-it-works__step reveal">
+                        <div class="how-it-works__step-number" aria-hidden="true">1</div>
+                        <h3 class="how-it-works__step-title">Найдите задачу</h3>
+                        <p class="how-it-works__step-text">Введите номер учебника, класс или тему — наш поиск мгновенно подберёт нужное решение.</p>
+                    </article>
+
+                    <article class="how-it-works__step reveal reveal-delay-1">
+                        <div class="how-it-works__step-number" aria-hidden="true">2</div>
+                        <h3 class="how-it-works__step-title">Изучите решение</h3>
+                        <p class="how-it-works__step-text">Читайте пошаговый разбор с пояснениями каждого действия и ссылками на теорию.</p>
+                    </article>
+
+                    <article class="how-it-works__step reveal reveal-delay-2">
+                        <div class="how-it-works__step-number" aria-hidden="true">3</div>
+                        <h3 class="how-it-works__step-title">Закрепите знания</h3>
+                        <p class="how-it-works__step-text">Решайте похожие задачи самостоятельно и проверяйте ответы — так знания закрепляются надолго.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============================================================
+             SUBJECTS (с кастомными SVG-иконками)
+             ============================================================ -->
+        <section class="section subjects" id="subjects" aria-labelledby="subjects-title">
+            <div class="container">
+                <h2 class="section__title reveal" id="subjects-title">Все школьные предметы</h2>
+                <p class="section__subtitle reveal reveal-delay-1">Решения и объяснения по 12 дисциплинам для 1–11 классов.</p>
+
+                <div class="subjects__grid">
+                    <a href="#" class="subjects__card reveal">
+                        <span class="subjects__card-icon" aria-hidden="true">
+                            <!-- SVG: Математика (линейка + угол) -->
+                            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M4 4h16v16H4z"/>
+                                <path d="M4 12h8M12 4v8M4 8h4M8 4v4"/>
+                            </svg>
+                        </span>
+                        <span class="subjects__card-title">Математика</span>
+                    </a>
+
+                    <a href="#" class="subjects__card reveal reveal-delay-1">
+                        <span class="subjects__card-icon" aria-hidden="true">
+                            <!-- SVG: Физика (атом) -->
+                            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <circle cx="12" cy="12" r="1.5" fill="currentColor"/>
+                                <ellipse cx="12" cy="12" rx="10" ry="4"/>
+                                <ellipse cx="12" cy="12" rx="10" ry="4" transform="rotate(60 12 12)"/>
+                                <ellipse cx="12" cy="12" rx="10" ry="4" transform="rotate(120 12 12)"/>
+                            </svg>
+                        </span>
+                        <span class="subjects__card-title">Физика</span>
+                    </a>
+
+                    <a href="#" class="subjects__card reveal reveal-delay-2">
+                        <span class="subjects__card-icon" aria-hidden="true">
+                            <!-- SVG: Химия (колба) -->
+                            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M9 3h6M10 3v6L5 19a2 2 0 002 3h10a2 2 0 002-3l-5-10V3"/>
+                                <path d="M8.5 14h7"/>
+                            </svg>
+                        </span>
+                        <span class="subjects__card-title">Химия</span>
+                    </a>
+
+                    <a href="#" class="subjects__card reveal reveal-delay-3">
+                        <span class="subjects__card-icon" aria-hidden="true">
+                            <!-- SVG: Русский язык (буква) -->
+                            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M4 19V5l8 14V5M16 5h4v14"/>
+                            </svg>
+                        </span>
+                        <span class="subjects__card-title">Русский язык</span>
+                    </a>
+
+                    <a href="#" class="subjects__card reveal">
+                        <span class="subjects__card-icon" aria-hidden="true">
+                            <!-- SVG: География (глобус) -->
+                            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <circle cx="12" cy="12" r="10"/>
+                                <path d="M2 12h20M12 2a15 15 0 010 20M12 2a15 15 0 000 20"/>
+                            </svg>
+                        </span>
+                        <span class="subjects__card-title">География</span>
+                    </a>
+
+                    <a href="#" class="subjects__card reveal reveal-delay-1">
+                        <span class="subjects__card-icon" aria-hidden="true">
+                            <!-- SVG: История (песочные часы) -->
+                            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M6 2h12M6 22h12M7 2v4l5 6-5 6v4M17 2v4l-5 6 5 6v4"/>
+                            </svg>
+                        </span>
+                        <span class="subjects__card-title">История</span>
+                    </a>
+
+                    <a href="#" class="subjects__card reveal reveal-delay-2">
+                        <span class="subjects__card-icon" aria-hidden="true">
+                            <!-- SVG: Биология (ДНК) -->
+                            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M4 4c4 4 12 4 16 0M4 20c4-4 12-4 16 0M4 4v16M20 4v16M4 12c4 0 12 0 16 0"/>
+                            </svg>
+                        </span>
+                        <span class="subjects__card-title">Биология</span>
+                    </a>
+
+                    <a href="#" class="subjects__card reveal reveal-delay-3">
+                        <span class="subjects__card-icon" aria-hidden="true">
+                            <!-- SVG: Английский (A) -->
+                            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M4 20L12 4l8 16M7 14h10"/>
+                            </svg>
+                        </span>
+                        <span class="subjects__card-title">Английский язык</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============================================================
+             FAQ (аккордеон)
+             ============================================================ -->
+        <section class="section" id="faq" aria-labelledby="faq-title">
+            <div class="container">
+                <h2 class="section__title reveal" id="faq-title" style="text-align: center;">Частые вопросы</h2>
+                <p class="section__subtitle reveal reveal-delay-1" style="text-align: center; margin-left: auto; margin-right: auto;">
+                    Ответы на самые популярные вопросы о платформе.
+                </p>
+
+                <div class="faq__list">
+                    <details class="faq__item reveal">
+                        <summary class="faq__question">
+                            ЗнаниеПлюс действительно бесплатный?
+                            <svg class="faq__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                <line x1="12" y1="5" x2="12" y2="19"/>
+                                <line x1="5" y1="12" x2="19" y2="12"/>
+                            </svg>
+                        </summary>
+                        <div class="faq__answer">
+                            <p>Да, базовый доступ ко всем решениям и объяснениям полностью бесплатный и не требует регистрации. Мы зарабатываем на премиум-подписке с дополнительными функциями, но основной контент всегда доступен всем.</p>
+                        </div>
+                    </details>
+
+                    <details class="faq__item reveal reveal-delay-1">
+                        <summary class="faq__question">
+                            Для каких классов есть решения?
+                            <svg class="faq__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                <line x1="12" y1="5" x2="12" y2="19"/>
+                                <line x1="5" y1="12" x2="19" y2="12"/>
+                            </svg>
+                        </summary>
+                        <div class="faq__answer">
+                            <p>На платформе представлены решения для школьников с 1 по 11 класс по 12 основным предметам школьной программы. Мы регулярно добавляем новые материалы в соответствии с актуальными учебниками.</p>
+                        </div>
+                    </details>
+
+                    <details class="faq__item reveal reveal-delay-2">
+                        <summary class="faq__question">
+                            Кто проверяет правильность решений?
+                            <svg class="faq__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                <line x1="12" y1="5" x2="12" y2="19"/>
+                                <line x1="5" y1="12" x2="19" y2="12"/>
+                            </svg>
+                        </summary>
+                        <div class="faq__answer">
+                            <p>Каждое решение проходит трёхступенчатую проверку: автор-предметник, независимый эксперт и методист. Только после этого материал публикуется на сайте. Мы гарантируем высокое качество всех материалов.</p>
+                        </div>
+                    </details>
+
+                    <details class="faq__item reveal reveal-delay-3">
+                        <summary class="faq__question">
+                            Можно ли пользоваться с телефона?
+                            <svg class="faq__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                <line x1="12" y1="5" x2="12" y2="19"/>
+                                <line x1="5" y1="12" x2="19" y2="12"/>
+                            </svg>
+                        </summary>
+                        <div class="faq__answer">
+                            <p>Да, сайт полностью адаптирован под мобильные устройства. Вы можете пользоваться им с любого смартфона, планшета или компьютера — интерфейс автоматически подстраивается под размер экрана.</p>
+                        </div>
+                    </details>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============================================================
+             CTA
+             ============================================================ -->
+        <section class="cta reveal reveal--scale" id="cta" aria-labelledby="cta-title">
+            <div class="cta__container">
+                <h2 class="cta__title" id="cta-title">Готовы начать учиться лучше?</h2>
+                <p class="cta__subtitle">Присоединяйтесь к сотням тысяч школьников, которые уже поняли, что учиться может быть просто.</p>
+                <a href="#" class="btn cta__btn">
+                    Попробовать бесплатно
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                        <path d="M5 12h14M13 5l7 7-7 7"/>
+                    </svg>
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <!-- ============================================================
+         FOOTER
+         ============================================================ -->
+    <footer class="footer" id="contact" role="contentinfo">
+        <div class="container">
+            <div class="footer__grid">
+                <div class="footer__brand">
+                    <div class="footer__logo">
+                        <span class="header__logo-icon" aria-hidden="true">З</span>
+                        <span>ЗнаниеПлюс</span>
+                    </div>
+                    <p class="footer__description">
+                        Образовательная платформа с проверенными решениями задач и пошаговыми объяснениями для школьников 1–11 классов.
+                    </p>
+                </div>
+
+                <nav class="footer__column" aria-label="Разделы сайта">
+                    <h3 class="footer__column-title">Разделы</h3>
+                    <ul class="footer__menu">
+                        <li><a href="#features" class="footer__menu-link">Возможности</a></li>
+                        <li><a href="#subjects" class="footer__menu-link">Предметы</a></li>
+                        <li><a href="#how-it-works" class="footer__menu-link">Как это работает</a></li>
+                        <li><a href="#faq" class="footer__menu-link">Вопросы</a></li>
+                    </ul>
+                </nav>
+
+                <nav class="footer__column" aria-label="Информация">
+                    <h3 class="footer__column-title">Информация</h3>
+                    <ul class="footer__menu">
+                        <li><a href="/about" class="footer__menu-link">О нас</a></li>
+                        <li><a href="/blog" class="footer__menu-link">Блог</a></li>
+                        <li><a href="/contacts" class="footer__menu-link">Контакты</a></li>
+                    </ul>
+                </nav>
+
+                <nav class="footer__column" aria-label="Правовая информация">
+                    <h3 class="footer__column-title">Правовое</h3>
+                    <ul class="footer__menu">
+                        <li><a href="/privacy" class="footer__menu-link">Политика конфиденциальности</a></li>
+                        <li><a href="/terms" class="footer__menu-link">Пользовательское соглашение</a></li>
+                    </ul>
+                </nav>
+            </div>
+
+            <div class="footer__bottom">
+                © 2026 ЗнаниеПлюс. Все права защищены.
+            </div>
+        </div>
+    </footer>
+
+    <!-- Кнопка "наверх" -->
+    <button class="back-to-top" id="backToTop" type="button" aria-label="Наверх">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M18 15l-6-6-6 6"/>
+        </svg>
+    </button>
+
+    <!-- ============================================================
+         JAVASCRIPT
+         Весь JS — vanilla, без зависимостей, с защитой от ошибок
+         ============================================================ -->
+    <script>
+        (function() {
+            'use strict';
+
+            // ========================================================
+            // 1. ПЕРЕКЛЮЧАТЕЛЬ ТЕМЫ
+            // Сохраняем выбор в localStorage, учитываем prefers-color-scheme
+            // ========================================================
+            const themeToggle = document.getElementById('themeToggle');
+            const html = document.documentElement;
+
+            // Определяем начальную тему
+            const getInitialTheme = () => {
+                const saved = localStorage.getItem('theme');
+                if (saved) return saved;
+                return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+            };
+
+            const setTheme = (theme) => {
+                html.setAttribute('data-theme', theme);
+                localStorage.setItem('theme', theme);
+                // Обновляем theme-color для мобильных браузеров
+                const metaTheme = document.querySelector('meta[name="theme-color"]');
+                if (metaTheme) {
+                    metaTheme.setAttribute('content', theme === 'dark' ? '#1E1B4B' : '#4F46E5');
+                }
+            };
+
+            // Инициализация
+            setTheme(getInitialTheme());
+
+            // Обработчик клика
+            if (themeToggle) {
+                themeToggle.addEventListener('click', () => {
+                    const current = html.getAttribute('data-theme');
+                    setTheme(current === 'dark' ? 'light' : 'dark');
+                });
+            }
+
+            // Слушаем системные изменения темы
+            window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', (e) => {
+                if (!localStorage.getItem('theme')) {
+                    setTheme(e.matches ? 'dark' : 'light');
+                }
+            });
+
+            // ========================================================
+            // 2. МОБИЛЬНОЕ МЕНЮ (БУРГЕР)
+            // ========================================================
+            const burger = document.getElementById('burger');
+            const mobileMenu = document.getElementById('mobileMenu');
+            const overlay = document.getElementById('overlay');
+            const body = document.body;
+
+            const openMenu = () => {
+                burger.classList.add('is-active');
+                mobileMenu.classList.add('is-open');
+                overlay.classList.add('is-visible');
+                body.classList.add('menu-open');
+                burger.setAttribute('aria-expanded', 'true');
+                mobileMenu.setAttribute('aria-hidden', 'false');
+                // Фокус на первый элемент меню для доступности
+                const firstLink = mobileMenu.querySelector('a');
+                if (firstLink) firstLink.focus();
+            };
+
+            const closeMenu = () => {
+                burger.classList.remove('is-active');
+                mobileMenu.classList.remove('is-open');
+                overlay.classList.remove('is-visible');
+                body.classList.remove('menu-open');
+                burger.setAttribute('aria-expanded', 'false');
+                mobileMenu.setAttribute('aria-hidden', 'true');
+                burger.focus();
+            };
+
+            if (burger && mobileMenu) {
+                burger.addEventListener('click', () => {
+                    const isOpen = burger.classList.contains('is-active');
+                    isOpen ? closeMenu() : openMenu();
+                });
+
+                // Закрытие по клику на оверлей
+                if (overlay) {
+                    overlay.addEventListener('click', closeMenu);
+                }
+
+                // Закрытие по клику на ссылку в меню
+                mobileMenu.querySelectorAll('a').forEach(link => {
+                    link.addEventListener('click', closeMenu);
+                });
+
+                // Закрытие по Escape
+                document.addEventListener('keydown', (e) => {
+                    if (e.key === 'Escape' && burger.classList.contains('is-active')) {
+                        closeMenu();
+                    }
+                });
+            }
+
+            // ========================================================
+            // 3. ПЛАВНЫЙ СКРОЛЛ (с учётом sticky header)
+            // ========================================================
+            document.querySelectorAll('a[href^="#"]').forEach(link => {
+                link.addEventListener('click', function(e) {
+                    const targetId = this.getAttribute('href');
+                    if (!targetId || targetId === '#' || targetId.length < 2) return;
+
+                    const target = document.querySelector(targetId);
+                    if (target) {
+                        e.preventDefault();
+                        target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                        // Обновляем URL без перезагрузки
+                        history.pushState(null, null, targetId);
+                    }
+                });
+            });
+
+            // ========================================================
+            // 4. АНИМАЦИИ ПОЯВЛЕНИЯ ПРИ СКРОЛЛЕ (Intersection Observer)
+            // ========================================================
+            const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+            if (!prefersReducedMotion && 'IntersectionObserver' in window) {
+                const revealObserver = new IntersectionObserver((entries) => {
+                    entries.forEach(entry => {
+                        if (entry.isIntersecting) {
+                            entry.target.classList.add('is-visible');
+                            revealObserver.unobserve(entry.target); // анимация только один раз
+                        }
+                    });
+                }, {
+                    threshold: 0.1,
+                    rootMargin: '0px 0px -50px 0px'
+                });
+
+                document.querySelectorAll('.reveal').forEach(el => {
+                    revealObserver.observe(el);
+                });
+            } else {
+                // Если анимации отключены — сразу показываем всё
+                document.querySelectorAll('.reveal').forEach(el => {
+                    el.classList.add('is-visible');
+                });
+            }
+
+            // ========================================================
+            // 5. АНИМИРОВАННЫЕ СЧЁТЧИКИ
+            // ========================================================
+            const animateCounter = (el) => {
+                const target = parseInt(el.getAttribute('data-count'), 10);
+                if (isNaN(target)) return;
+
+                const duration = 2000;
+                const start = performance.now();
+
+                const update = (now) => {
+                    const progress = Math.min((now - start) / duration, 1);
+                    // Easing: easeOutExpo
+                    const eased = progress === 1 ? 1 : 1 - Math.pow(2, -10 * progress);
+                    const current = Math.floor(eased * target);
+
+                    // Форматирование числа с пробелами (50 000)
+                    el.textContent = current.toLocaleString('ru-RU') + (target >= 1000 ? '+' : '');
+
+                    if (progress < 1) {
+                        requestAnimationFrame(update);
+                    } else {
+                        el.textContent = target.toLocaleString('ru-RU') + '+';
+                    }
+                };
+
+                requestAnimationFrame(update);
+            };
+
+            if ('IntersectionObserver' in window) {
+                const counterObserver = new IntersectionObserver((entries) => {
+                    entries.forEach(entry => {
+                        if (entry.isIntersecting) {
+                            animateCounter(entry.target);
+                            counterObserver.unobserve(entry.target);
+                        }
+                    });
+                }, { threshold: 0.5 });
+
+                document.querySelectorAll('[data-count]').forEach(el => {
+                    counterObserver.observe(el);
+                });
+            }
+
+            // ========================================================
+            // 6. ПРОГРЕСС-БАР ЧТЕНИЯ СТРАНИЦЫ
+            // ========================================================
+            const progressBar = document.getElementById('progressBar');
+            if (progressBar) {
+                let ticking = false;
+
+                const updateProgress = () => {
+                    const scrollTop = window.scrollY;
+                    const docHeight = document.documentElement.scrollHeight - window.innerHeight;
+                    const progress = docHeight > 0 ? (scrollTop / docHeight) * 100 : 0;
+                    progressBar.style.width = progress + '%';
+                    ticking = false;
+                };
+
+                window.addEventListener('scroll', () => {
+                    if (!ticking) {
+                        requestAnimationFrame(updateProgress);
+                        ticking = true;
+                    }
+                }, { passive: true });
+            }
+
+            // ========================================================
+            // 7. КНОПКА "НАВЕРХ"
+            // ========================================================
+            const backToTop = document.getElementById('backToTop');
+            if (backToTop) {
+                let ticking = false;
+
+                const toggleBackToTop = () => {
+                    if (window.scrollY > 500) {
+                        backToTop.classList.add('is-visible');
+                    } else {
+                        backToTop.classList.remove('is-visible');
+                    }
+                    ticking = false;
+                };
+
+                window.addEventListener('scroll', () => {
+                    if (!ticking) {
+                        requestAnimationFrame(toggleBackToTop);
+                        ticking = true;
+                    }
+                }, { passive: true });
+
+                backToTop.addEventListener('click', () => {
+                    window.scrollTo({ top: 0, behavior: 'smooth' });
+                });
+            }
+
+            // ========================================================
+            // 8. 3D-ЭФФЕКТ КАРТОЧКИ В HERO (parallax на движение мыши)
+            // ========================================================
+            const heroCard = document.querySelector('.hero__card');
+            if (heroCard && !prefersReducedMotion && window.matchMedia('(hover: hover)').matches) {
+                const heroVisual = document.querySelector('.hero__visual');
+
+                heroVisual.addEventListener('mousemove', (e) => {
+                    const rect = heroVisual.getBoundingClientRect();
+                    const x = e.clientX - rect.left;
+                    const y = e.clientY - rect.top;
+                    const centerX = rect.width / 2;
+                    const centerY = rect.height / 2;
+
+                    const rotateX = ((y - centerY) / centerY) * -8;
+                    const rotateY = ((x - centerX) / centerX) * 8;
+
+                    heroCard.style.transform = `perspective(1000px) rotateX(${rotateX}deg) rotateY(${rotateY}deg) translateY(-8px)`;
+                });
+
+                heroVisual.addEventListener('mouseleave', () => {
+                    heroCard.style.transform = '';
+                });
+            }
+
+            // ========================================================
+            // 9. КОНСОЛЬНОЕ СООБЩЕНИЕ (для тех, кто смотрит код 😉)
+            // ========================================================
+            console.log(
+                '%c👋 Привет, разработчик!',
+                'font-size: 20px; font-weight: bold; color: #4F46E5;'
+            );
+            console.log(
+                '%cЭта страница свёрстана вручную с использованием БЭМ, семантической разметки и современных веб-стандартов.\n\nЕсли вы ищете контент-редактора — я ваш кандидат! ✨',
+                'font-size: 13px; color: #6B7280;'
+            );
+
+        })();
+    </script>
+</body>
+</html>
